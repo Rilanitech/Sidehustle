@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideHustle Assignment</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript">
+        function validateForm() {
+            var pw1 = document.getElementById("password").value;
+            var pw2 = document.getElementById("confirmpassword").value;
+            if(pw1 != pw2) {
+      document.getElementById("message2").innerHTML = "Passwords do not match";
+      return false;
+    }
+        }    
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="odin">
+                <div class="flex-container" style="text-align: center;">
+                <img src="images/odin-lined.png" width="60px" height="60px">
+                <h3>ODIN</h3>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2>SideHustle Week1 Assignment</h2>
+            <P><strong>This not a real online service! You know yoou need something<br> like this in your life to help you realize your deepest dreams.
+            <br> Sign up now to get started.</strong>
+            </P>
+            <p><i><strong>You know your want to</strong></i></p>
+        <div>
+            <form onsubmit ="return validateForm()" class="shadow p-3 mb-3 bg-body rounded">
+                <h5><strong>Lets do this!</strong></h5>
+                   <div class="row">    
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Thor" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="example@gmail.com" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="password" placeholder="Password" class="form-control"><br>                        
+                </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Odinson" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="number" placeholder="12345" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label> Confirm Password</label>
+                        <input type="password" id="confirmpassword" placeholder="*****" class="form-control">
+                        <span id = "message2" style="color:red"> </span> <br><br>
+                </div>
+              </div>           
+                </div>                     
+            </div>
+      <button type="submit" class="btn btn-md" style="background-color: #596d48; color: white;" >Create Account</button>
+        <br>
+        <br>
+        <p><strong>Already have an account?</strong>
+        <span><a href="#" style="color: #596d48;">Login Here</a></span>
+        </p>
+    </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
